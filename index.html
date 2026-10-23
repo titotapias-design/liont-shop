@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LionT — Pack FOMO y Brief Fed</title>
+  <meta name="description" content="Productos digitales LionT: Pack FOMO (€5) y Brief Fed 27–28 (€9). Pago seguro con Stripe. Entrega por email con adjunto." />
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --card: #14161c;
+      --text: #f2f4f8;
+      --muted: #a8b0c0;
+      --accent: #e8b84a;
+      --line: #2a2f3a;
+      --ok: #6bcf8e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    header { margin-bottom: 2rem; }
+    .brand { font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+    h1 { font-size: 1.75rem; margin: 0.4rem 0 0.6rem; line-height: 1.25; }
+    .lead { color: var(--muted); margin: 0; font-size: 1.05rem; }
+    .trust {
+      margin: 1.5rem 0 2rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--card);
+      font-size: 0.95rem;
+    }
+    .trust strong { color: var(--ok); }
+    .grid { display: grid; gap: 1.25rem; }
+    @media (min-width: 640px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 1.35rem 1.25rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .price {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .price span { font-size: 0.9rem; font-weight: 500; color: var(--muted); }
+    h2 { margin: 0; font-size: 1.15rem; }
+    ul { margin: 0; padding-left: 1.1rem; color: var(--muted); font-size: 0.95rem; }
+    li { margin: 0.25rem 0; }
+    .btn {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      background: var(--accent);
+      color: #111;
+      font-weight: 700;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      margin-top: auto;
+    }
+    .btn:hover { filter: brightness(1.05); }
+    .btn:focus { outline: 2px solid #fff; outline-offset: 2px; }
+    .note { font-size: 0.8rem; color: var(--muted); margin: 0; }
+    .how {
+      margin-top: 2.25rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+    }
+    .how h3 { margin: 0 0 0.75rem; font-size: 1.05rem; }
+    .how ol { margin: 0; padding-left: 1.2rem; color: var(--muted); }
+    .how li { margin: 0.4rem 0; }
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">LionT · Juan Carlos</div>
+      <h1>Productos digitales claros. Pago con Stripe. Entrega por email.</h1>
+      <p class="lead">Elige el pack que necesitas. Tras el pago recibirás el archivo en el correo que uses en Stripe — sin links públicos raros.</p>
+    </header>
+
+    <div class="trust" role="note">
+      <strong>Pago seguro:</strong> checkout oficial de Stripe (Hispania Atlantic). No pedimos contraseñas ni datos de tarjeta en esta página. Tras el pago, te enviamos el producto por email con adjunto.
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <h2>LionT FOMO Pack</h2>
+        <div class="price">5 € <span>pago único</span></div>
+        <ul>
+          <li>Kit digital para edits / Reels</li>
+          <li>Archivo ZIP listo para descargar</li>
+          <li>Entrega: email con adjunto tras el pago</li>
+        </ul>
+        <a class="btn" href="https://buy.stripe.com/14A7sL5x69T32QE1RHbII01" rel="noopener">Comprar Pack FOMO — 5 €</a>
+        <p class="note">Te lleva al checkout de Stripe.</p>
+      </article>
+
+      <article class="card">
+        <h2>Brief Fed 27–28</h2>
+        <div class="price">9 € <span>pago único</span></div>
+        <ul>
+          <li>Brief educativo Fed · BTC / ETH / SOL / XRP</li>
+          <li>PDF listo para leer</li>
+          <li>Entrega: email con adjunto tras el pago</li>
+        </ul>
+        <a class="btn" href="https://buy.stripe.com/28EfZhbVu5CN9f267XbII02" rel="noopener">Comprar Brief Fed — 9 €</a>
+        <p class="note">Te lleva al checkout de Stripe.</p>
+      </article>
+    </div>
+
+    <section class="how" aria-labelledby="how-title">
+      <h3 id="how-title">Cómo funciona</h3>
+      <ol>
+        <li>Elige producto y pulsa comprar.</li>
+        <li>Pagas en Stripe con el email donde quieres recibir el archivo.</li>
+        <li>Te enviamos el adjunto a ese mismo email (sin marketing).</li>
+        <li>Si no llega, responde al correo de entrega y lo reenviamos.</li>
+      </ol>
+    </section>
+
+    <footer>
+      <p>LionT / Juan Carlos · Contacto: <a href="mailto:titotapias@gmail.com">titotapias@gmail.com</a></p>
+      <p>Pagos procesados por Stripe. Productos digitales; entrega por correo electrónico tras el pago confirmado.</p>
+    </footer>
+  </div>
+</body>
+</html>

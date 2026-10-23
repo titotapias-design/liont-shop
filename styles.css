@@ -698,3 +698,33 @@ details .answer a { word-break: break-word; }
   .nav a:not(.header-cta) { display: none; }
   .header-cta { margin-left: 0; }
 }
+
+
+/* --- polish v2: sticky mobile buy bar --- */
+.mobile-buybar {
+  display: none;
+}
+@media (max-width: 720px) {
+  .mobile-buybar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.55rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    padding: 0.65rem 0.85rem calc(0.65rem + env(safe-area-inset-bottom));
+    background: rgba(8, 8, 11, 0.92);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--border);
+  }
+  .mobile-buybar .cta {
+    margin: 0;
+    text-align: center;
+    padding: 0.75rem 0.5rem;
+    font-size: 0.9rem;
+    box-shadow: none;
+  }
+  body { padding-bottom: 5.5rem; }
+}

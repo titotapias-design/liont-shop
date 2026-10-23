@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="LionT">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0d78c"/>
+      <stop offset="100%" stop-color="#c9a227"/>
+    </linearGradient>
+  </defs>
+  <path d="M60 6 L106 32.5 L106 87.5 L60 114 L14 87.5 L14 32.5 Z" fill="none" stroke="url(#gold)" stroke-width="3.2"/>
+  <g fill="none" stroke="#f7f3ea" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M36 54c0-16 48-16 48 0 8 6 8 24-4 32-6 10-34 10-40 0-12-8-12-26-4-32z"/>
+    <path d="M45 58c0-9 30-9 30 0 0 14-8 22-15 22s-15-8-15-22z"/>
+    <path d="M48 61l12-5 12 5"/>
+    <path d="M60 58v11"/>
+    <path d="M55 72l5 4 5-4"/>
+    <path d="M52 78q8 6 16 0"/>
+  </g>
+  <path d="M51 64l4.5 5.5H46.5z" fill="#f7f3ea"/>
+  <path d="M69 64l4.5 5.5H64.5z" fill="#f7f3ea"/>
+</svg>

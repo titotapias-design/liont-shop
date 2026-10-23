@@ -3,142 +3,229 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LionT — Pack FOMO y Brief Fed</title>
-  <meta name="description" content="Productos digitales LionT: Pack FOMO (€5) y Brief Fed 27–28 (€9). Pago seguro con Stripe. Entrega por email con adjunto." />
-  <style>
-    :root {
-      --bg: #0b0c10;
-      --card: #14161c;
-      --text: #f2f4f8;
-      --muted: #a8b0c0;
-      --accent: #e8b84a;
-      --line: #2a2f3a;
-      --ok: #6bcf8e;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.55;
-    }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
-    header { margin-bottom: 2rem; }
-    .brand { font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
-    h1 { font-size: 1.75rem; margin: 0.4rem 0 0.6rem; line-height: 1.25; }
-    .lead { color: var(--muted); margin: 0; font-size: 1.05rem; }
-    .trust {
-      margin: 1.5rem 0 2rem;
-      padding: 1rem 1.1rem;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      background: var(--card);
-      font-size: 0.95rem;
-    }
-    .trust strong { color: var(--ok); }
-    .grid { display: grid; gap: 1.25rem; }
-    @media (min-width: 640px) { .grid { grid-template-columns: 1fr 1fr; } }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 1.35rem 1.25rem 1.4rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-    .price {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: var(--accent);
-    }
-    .price span { font-size: 0.9rem; font-weight: 500; color: var(--muted); }
-    h2 { margin: 0; font-size: 1.15rem; }
-    ul { margin: 0; padding-left: 1.1rem; color: var(--muted); font-size: 0.95rem; }
-    li { margin: 0.25rem 0; }
-    .btn {
-      display: inline-block;
-      text-align: center;
-      text-decoration: none;
-      background: var(--accent);
-      color: #111;
-      font-weight: 700;
-      padding: 0.75rem 1rem;
-      border-radius: 10px;
-      margin-top: auto;
-    }
-    .btn:hover { filter: brightness(1.05); }
-    .btn:focus { outline: 2px solid #fff; outline-offset: 2px; }
-    .note { font-size: 0.8rem; color: var(--muted); margin: 0; }
-    .how {
-      margin-top: 2.25rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--line);
-    }
-    .how h3 { margin: 0 0 0.75rem; font-size: 1.05rem; }
-    .how ol { margin: 0; padding-left: 1.2rem; color: var(--muted); }
-    .how li { margin: 0.4rem 0; }
-    footer {
-      margin-top: 2.5rem;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-    footer a { color: var(--accent); }
-  </style>
+  <meta name="description" content="Productos digitales LionT — educación financiera por Tito Tapias. Pack FOMO €5 y Brief Fed €9. Pago seguro con Stripe. Entrega por email." />
+  <meta name="theme-color" content="#0a0a0c" />
+  <meta property="og:title" content="LionT Shop — Pack FOMO y Brief Fed" />
+  <meta property="og:description" content="Herramientas claras de educación financiera. Sin hype. Pago con Stripe. Entrega por email." />
+  <meta property="og:type" content="website" />
+  <title>LionT Shop — Pack FOMO y Brief Fed | Tito Tapias</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">LionT · Juan Carlos</div>
-      <h1>Productos digitales claros. Pago con Stripe. Entrega por email.</h1>
-      <p class="lead">Elige el pack que necesitas. Tras el pago recibirás el archivo en el correo que uses en Stripe — sin links públicos raros.</p>
-    </header>
+  <header class="site-header wrap">
+    <a class="brand" href="#top" id="top">
+      <div class="brand-mark" aria-hidden="true">L</div>
+      <div class="brand-text">
+        <strong>LionT</strong>
+        <span>Educación financiera</span>
+      </div>
+    </a>
+    <div class="badge-seller">Vendido por Tito Tapias</div>
+  </header>
 
-    <div class="trust" role="note">
-      <strong>Pago seguro:</strong> checkout oficial de Stripe (Hispania Atlantic). No pedimos contraseñas ni datos de tarjeta en esta página. Tras el pago, te enviamos el producto por email con adjunto.
-    </div>
+  <main>
+    <section class="hero wrap">
+      <p class="hero-kicker">Productos digitales · pago único</p>
+      <h1>Herramientas claras para <em>no improvisar</em> en el mercado</h1>
+      <p class="hero-lead">
+        Packs educativos de LionT (Tito Tapias). Sabes qué compras, pagas con Stripe
+        y recibes el material por email. Sin suscripción. Sin urgencia falsa.
+      </p>
+      <ul class="trust-row">
+        <li>Qué incluye, escrito</li>
+        <li>Pago seguro Stripe</li>
+        <li>Entrega por email</li>
+      </ul>
+    </section>
 
-    <div class="grid">
-      <article class="card">
-        <h2>LionT FOMO Pack</h2>
-        <div class="price">5 € <span>pago único</span></div>
-        <ul>
-          <li>Kit digital para edits / Reels</li>
-          <li>Archivo ZIP listo para descargar</li>
-          <li>Entrega: email con adjunto tras el pago</li>
+    <section class="products wrap" id="productos" aria-label="Productos">
+      <!-- Pack FOMO -->
+      <article class="product" id="pack-fomo">
+        <div class="product-top">
+          <div>
+            <p class="product-label">Starter · disciplina</p>
+            <h2>Pack FOMO</h2>
+          </div>
+          <div class="price">
+            <strong>€5</strong>
+            <span>pago único</span>
+          </div>
+        </div>
+        <p class="product-desc">
+          Para cuando el hype te empuja a comprar sin plan. Tres piezas simples
+          que escribes <em>antes</em> de mirar el gráfico — no señales, no tipster.
+        </p>
+        <ul class="includes">
+          <li>
+            <span class="ico" aria-hidden="true">✓</span>
+            <div>
+              <strong>Checklist de entradas</strong>
+              <small>Condiciones mínimas que deben cumplirse antes de abrir una posición.</small>
+            </div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">✓</span>
+            <div>
+              <strong>Reglas de tamaño</strong>
+              <small>Porcentaje máximo de tu capital por operación — escrito, no “a ojo”.</small>
+            </div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">✓</span>
+            <div>
+              <strong>Plantilla de journal</strong>
+              <small>Registro corto de por qué entraste, qué pasó y qué aprendes.</small>
+            </div>
+          </li>
         </ul>
-        <a class="btn" href="https://buy.stripe.com/14A7sL5x69T32QE1RHbII01" rel="noopener">Comprar Pack FOMO — 5 €</a>
-        <p class="note">Te lleva al checkout de Stripe.</p>
+        <p class="note">
+          Formato digital (PDF/MD). Uso personal. Educación: no es consejo de inversión ni promesa de resultados.
+        </p>
+        <a
+          class="cta cta-primary"
+          href="https://buy.stripe.com/14A7sL5x69T32QE1RHbII01"
+          rel="noopener noreferrer"
+          target="_blank"
+        >Comprar Pack FOMO · €5</a>
+        <p class="cta-hint">Te lleva a Stripe Checkout. Tras el pago, entrega por email.</p>
       </article>
 
-      <article class="card">
-        <h2>Brief Fed 27–28</h2>
-        <div class="price">9 € <span>pago único</span></div>
-        <ul>
-          <li>Brief educativo Fed · BTC / ETH / SOL / XRP</li>
-          <li>PDF listo para leer</li>
-          <li>Entrega: email con adjunto tras el pago</li>
+      <!-- Brief Fed -->
+      <article class="product" id="brief-fed">
+        <div class="product-top">
+          <div>
+            <p class="product-label">Informe · FOMC</p>
+            <h2>Brief Fed</h2>
+          </div>
+          <div class="price">
+            <strong>€9</strong>
+            <span>pago único</span>
+          </div>
+        </div>
+        <p class="product-desc">
+          Traducción clara de la reunión FOMC (tipos y tono de Powell) y qué suele
+          mover Bitcoin, el dólar y la bolsa — en una página, sin predicción mágica.
+        </p>
+        <ul class="includes">
+          <li>
+            <span class="ico" aria-hidden="true">✓</span>
+            <div>
+              <strong>Resumen FOMC</strong>
+              <small>Decisión de tipos + tono del discurso, en lenguaje llano con tecnicismos ligeros.</small>
+            </div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">✓</span>
+            <div>
+              <strong>Niveles a tener en cuenta</strong>
+              <small>Referencias útiles (BTC, ETH, SOL, XRP y contexto macro) — no “compra aquí”.</small>
+            </div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">✓</span>
+            <div>
+              <strong>Qué vigilar hasta la próxima FOMC</strong>
+              <small>Checklist de datos y riesgos a seguir, para no improvisar el día D.</small>
+            </div>
+          </li>
         </ul>
-        <a class="btn" href="https://buy.stripe.com/28EfZhbVu5CN9f267XbII02" rel="noopener">Comprar Brief Fed — 9 €</a>
-        <p class="note">Te lleva al checkout de Stripe.</p>
+        <p class="note">
+          Informe educativo LionT (PDF/MD). Enfocado en crypto mayor: BTC, ETH, SOL, XRP.
+          No es consejo de inversión.
+        </p>
+        <a
+          class="cta cta-secondary"
+          href="https://buy.stripe.com/28EfZhbVu5CN9f267XbII02"
+          rel="noopener noreferrer"
+          target="_blank"
+        >Comprar Brief Fed · €9</a>
+        <p class="cta-hint">Pago en Stripe. Tras confirmar, recibes el brief por email.</p>
       </article>
-    </div>
+    </section>
 
-    <section class="how" aria-labelledby="how-title">
-      <h3 id="how-title">Cómo funciona</h3>
-      <ol>
-        <li>Elige producto y pulsa comprar.</li>
-        <li>Pagas en Stripe con el email donde quieres recibir el archivo.</li>
-        <li>Te enviamos el adjunto a ese mismo email (sin marketing).</li>
-        <li>Si no llega, responde al correo de entrega y lo reenviamos.</li>
+    <section class="section wrap" id="como-funciona">
+      <h2>Cómo funciona</h2>
+      <ol class="steps">
+        <li><strong>Elige el pack</strong> y pulsa el botón. Vas a Stripe (Hispania Atlantic / LionT).</li>
+        <li><strong>Pagas una sola vez</strong> con tarjeta u otros métodos que ofrezca Stripe. No hay suscripción.</li>
+        <li><strong>Recibes el material por email</strong> en la dirección que indiques en el checkout (entrega digital).</li>
       </ol>
     </section>
 
-    <footer>
-      <p>LionT / Juan Carlos · Contacto: <a href="mailto:titotapias@gmail.com">titotapias@gmail.com</a></p>
-      <p>Pagos procesados por Stripe. Productos digitales; entrega por correo electrónico tras el pago confirmado.</p>
-    </footer>
-  </div>
+    <section class="section wrap" id="quien">
+      <div class="seller">
+        <h2>Quién vende</h2>
+        <p>
+          <strong>LionT</strong> es el proyecto de educación financiera de
+          <strong>Tito Tapias</strong> (@liont_music). Contenido práctico sobre disciplina,
+          crypto y macro — sin venderte el sueño de “hazte rico”.
+        </p>
+        <p>
+          Los cobros los procesa <strong>Stripe</strong>. Si tienes una duda antes o después
+          de comprar, escribe a
+          <a href="mailto:titotapias@gmail.com">titotapias@gmail.com</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="faq wrap" id="faq">
+      <h2>Preguntas frecuentes</h2>
+
+      <details>
+        <summary>¿Cómo recibo el producto?</summary>
+        <div class="answer">
+          Tras el pago en Stripe, te enviamos el material digital (PDF o Markdown / ZIP)
+          al email del checkout. Si no llega en un rato, revisa spam o escribe a
+          <a href="mailto:titotapias@gmail.com">titotapias@gmail.com</a> con el justificante de pago.
+        </div>
+      </details>
+
+      <details>
+        <summary>¿Hay reembolso?</summary>
+        <div class="answer">
+          Son productos digitales de descarga inmediata. Si no has podido acceder al archivo
+          por un fallo nuestro, te devolvemos el importe. Si ya lo descargaste y no encaja
+          con lo que esperabas, escríbenos: resolvemos caso a caso de forma razonable.
+          Contacto: <a href="mailto:titotapias@gmail.com">titotapias@gmail.com</a>.
+        </div>
+      </details>
+
+      <details>
+        <summary>¿Es consejo de inversión o señales?</summary>
+        <div class="answer">
+          No. Es material educativo (checklists, plantillas e informes de contexto).
+          Tú decides qué hacer con tu dinero. LionT no gestiona carteras ajenas ni garantiza resultados.
+        </div>
+      </details>
+
+      <details>
+        <summary>¿Hay urgencia o plazas limitadas?</summary>
+        <div class="answer">
+          No. El precio es el publicado. No inventamos “solo quedan 3” ni contadores falsos.
+          Cuando haya una edición concreta del Brief Fed (p. ej. una FOMC), lo indicamos en la descripción.
+        </div>
+      </details>
+
+      <details>
+        <summary>¿Cómo contacto?</summary>
+        <div class="answer">
+          Email: <a href="mailto:titotapias@gmail.com">titotapias@gmail.com</a>.
+          Respuesta habitual en horario laboral (España).
+        </div>
+      </details>
+    </section>
+
+    <p class="disclaimer wrap">
+      Aviso: el contenido de LionT es educativo e informativo. No constituye asesoramiento
+      financiero, fiscal ni de inversión. Operar con criptoactivos implica riesgo de pérdida
+      del capital. Pago procesado por Stripe; LionT / Tito Tapias es el vendedor del producto digital.
+    </p>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p><strong>LionT</strong> · Tito Tapias · <a href="mailto:titotapias@gmail.com">titotapias@gmail.com</a></p>
+    <p>© <span id="y"></span> LionT. Todos los derechos reservados.</p>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>

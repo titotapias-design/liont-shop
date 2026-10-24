@@ -3,9 +3,21 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://titotapias-design.github.io/liont-shop/</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-24</lastmod>
     <image:image><image:loc>https://titotapias-design.github.io/liont-shop/assets/hero.jpg</image:loc></image:image>
     <image:image><image:loc>https://titotapias-design.github.io/liont-shop/assets/card-fomo.jpg</image:loc></image:image>
     <image:image><image:loc>https://titotapias-design.github.io/liont-shop/assets/card-fed.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://titotapias-design.github.io/liont-shop/guias/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://titotapias-design.github.io/liont-shop/guias/diario-de-trading/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://titotapias-design.github.io/liont-shop/guias/que-es-la-fomc-bitcoin/</loc>
+    <lastmod>2026-10-24</lastmod>
   </url>
 </urlset>

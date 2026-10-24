@@ -3,22 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Plantilla de trading y checklist crypto | LionT Shop</title>
-  <meta name="description" content="Pack FOMO (5 €): checklist crypto, reglas de riesgo y plantilla de diario de trading. Brief Fed (9 €): la FOMC explicada. Pago único con Stripe." />
+  <title>Plantilla de diario de trading y checklist crypto | LionT</title>
+  <meta name="description" content="Pack FOMO (5 €): checklist crypto, reglas de tamaño de posición y plantilla de diario de trading. Brief Fed (9 €): la FOMC explicada. Pago único." />
+  <!-- TODO SEARCH CONSOLE (pendiente de Tito):
+       1) search.google.com/search-console → Añadir propiedad → "Prefijo de la URL" → https://titotapias-design.github.io/liont-shop/
+       2) Método "Etiqueta HTML": copiar la meta y pegarla AQUÍ, sustituyendo este comentario:
+          <meta name="google-site-verification" content="TOKEN_QUE_DA_GOOGLE" />
+       3) Verificar y enviar sitemap.xml. NO inventar el token. -->
   <link rel="canonical" href="https://titotapias-design.github.io/liont-shop/" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:site_name" content="LionT" />
   <meta property="og:url" content="https://titotapias-design.github.io/liont-shop/" />
-  <meta property="og:title" content="Plantilla de trading y checklist crypto | LionT" />
+  <meta property="og:title" content="Plantilla de diario de trading y checklist crypto | LionT" />
   <meta property="og:description" content="Herramientas digitales de educación financiera: checklist de entradas, reglas de tamaño, diario de trading e informe FOMC. Pago único, sin hype." />
   <meta property="og:image" content="https://titotapias-design.github.io/liont-shop/assets/og-liont-1200x630.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="LionT — plantilla de trading y checklist crypto" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Plantilla de trading y checklist crypto | LionT" />
+  <meta name="twitter:title" content="Plantilla de diario de trading y checklist crypto | LionT" />
   <meta name="twitter:description" content="Checklist de entradas, diario de trading e informe FOMC. Educación, no señales. Desde 5 €." />
   <meta name="twitter:image" content="https://titotapias-design.github.io/liont-shop/assets/og-liont-1200x630.jpg" />
   <meta name="twitter:image:alt" content="LionT — plantilla de trading y checklist crypto" />
@@ -26,7 +31,10 @@
   <meta name="theme-color" content="#0a0a0c" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" /></noscript>
+  <link rel="preload" as="image" href="assets/hero-1200.webp" imagesrcset="assets/hero-768.webp 768w, assets/hero-1200.webp 1200w" imagesizes="100vw" type="image/webp" />
   <link rel="stylesheet" href="styles.css" />
 <script type="application/ld+json">
 {
@@ -85,6 +93,79 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://titotapias-design.github.io/liont-shop/#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cómo recibo el producto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tras el pago en Stripe, enviamos el material digital (PDF, Markdown o ZIP) al email del checkout. Si no llega en un rato, revisa spam o escribe a titotapias@gmail.com con el justificante de pago."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hay reembolso?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Son productos digitales de descarga inmediata. Si no has podido acceder al archivo por un fallo nuestro, devolvemos el importe. Si ya lo descargaste y no encaja, escríbenos: resolvemos caso a caso de forma razonable. Contacto: titotapias@gmail.com."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es consejo de inversión o señales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Es material educativo (checklists, plantillas e informes de contexto). Tú decides qué hacer con tu dinero. LionT no gestiona carteras ajenas ni garantiza resultados."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hay urgencia o plazas limitadas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. El precio es el publicado. No inventamos escasez ni contadores falsos. Cuando haya una edición concreta del Brief Fed (p. ej. una FOMC), lo indicamos en la descripción."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué incluye exactamente el Pack FOMO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tres piezas: un checklist de condiciones mínimas antes de abrir una posición, unas reglas de tamaño de posición (porcentaje máximo de capital por operación) y una plantilla de diario de trading para registrar por qué entraste, qué pasó y qué aprendes. Formato digital (PDF/MD), uso personal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué es la FOMC y qué trae el Brief Fed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La FOMC es el comité de la Reserva Federal de EE. UU. que decide los tipos de interés; se reúne ocho veces al año. El Brief Fed resume la decisión y el tono en lenguaje llano, da niveles de referencia en BTC, ETH, SOL y XRP y una checklist de qué vigilar hasta la próxima reunión. Más contexto en la guía Qué es la FOMC y cómo afecta a bitcoin."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es una suscripción?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Pagas una sola vez en Stripe Checkout. No hay renovación automática."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo contacto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Email: titotapias@gmail.com. Respuesta habitual en horario laboral (España)."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -101,6 +182,7 @@
       <nav class="nav" aria-label="Principal">
         <a href="#productos">Productos</a>
         <a href="#como-funciona">Cómo funciona</a>
+        <a href="guias/">Guías</a>
         <a href="#faq">FAQ</a>
         <a class="header-cta" href="#productos">Comprar</a>
       </nav>
@@ -110,15 +192,16 @@
   <main id="contenido">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-media" aria-hidden="true">
-        <img src="assets/hero.jpg" alt="" width="1200" height="675" fetchpriority="high" />
+        <picture><source type="image/webp" srcset="assets/hero-768.webp 768w, assets/hero-1200.webp 1200w" sizes="100vw" /><img src="assets/hero.jpg" alt="" width="1200" height="675" fetchpriority="high" /></picture>
         <div class="hero-shade"></div>
       </div>
       <div class="wrap hero-copy">
         <p class="hero-kicker">Productos digitales · pago único</p>
-        <h1 id="hero-title">Claridad antes de <em>actuar</em> en el mercado</h1>
+        <h1 id="hero-title">Checklist crypto y diario de trading para <em>actuar</em> con claridad</h1>
         <p class="hero-lead">
-          Packs educativos LionT: sabes qué compras, pagas con Stripe y recibes el material por email.
-          Sin suscripción. Sin urgencia inventada.
+          Herramientas de educación financiera en español: un checklist antes de entrar, reglas de tamaño de posición,
+          una plantilla de diario de trading y la reunión de la Fed (FOMC) explicada para crypto.
+          Pago único con Stripe, entrega por email. Sin suscripción. Sin urgencia inventada.
         </p>
         <div class="hero-actions">
           <a class="cta cta-primary" href="#productos">Ver productos</a>
@@ -133,56 +216,56 @@
     </section>
 
     <section class="brand-strip wrap" aria-label="Temas LionT">
-      <img src="assets/strip-discipline.jpg" alt="Disciplina de trading — plan, riesgo, entrada, salida" width="480" height="480" loading="lazy" />
-      <img src="assets/strip-charts.jpg" alt="Lectura de mercados — gráficos claros" width="480" height="480" loading="lazy" />
-      <img src="assets/strip-macro.jpg" alt="Macro y Fed — contexto FOMC" width="480" height="480" loading="lazy" />
-      <img src="assets/strip-risk.jpg" alt="Gestión de riesgo — tamaño de posición" width="480" height="480" loading="lazy" />
+      <picture><source type="image/webp" srcset="assets/strip-discipline-240.webp 240w, assets/strip-discipline-480.webp 480w" sizes="(min-width: 880px) 210px, 45vw" /><img src="assets/strip-discipline.jpg" alt="Disciplina de trading — plan, riesgo, entrada, salida" width="480" height="480" loading="lazy" /></picture>
+      <picture><source type="image/webp" srcset="assets/strip-charts-240.webp 240w, assets/strip-charts-480.webp 480w" sizes="(min-width: 880px) 210px, 45vw" /><img src="assets/strip-charts.jpg" alt="Lectura de mercados — gráficos claros" width="480" height="480" loading="lazy" /></picture>
+      <picture><source type="image/webp" srcset="assets/strip-macro-240.webp 240w, assets/strip-macro-480.webp 480w" sizes="(min-width: 880px) 210px, 45vw" /><img src="assets/strip-macro.jpg" alt="Macro y Fed — contexto FOMC" width="480" height="480" loading="lazy" /></picture>
+      <picture><source type="image/webp" srcset="assets/strip-risk-240.webp 240w, assets/strip-risk-480.webp 480w" sizes="(min-width: 880px) 210px, 45vw" /><img src="assets/strip-risk.jpg" alt="Gestión de riesgo — tamaño de posición" width="480" height="480" loading="lazy" /></picture>
     </section>
 
     <section class="products wrap" id="productos" aria-label="Productos">
       <div class="section-head">
-        <h2>Elige tu pack</h2>
+        <h2>Elige tu pack: checklist y diario de trading, o informe FOMC</h2>
         <p>Dos herramientas concretas. Precio fijo. Entrega digital.</p>
       </div>
 
       <article class="product" id="pack-fomo">
         <div class="product-visual">
-          <img src="assets/card-fomo.jpg" alt="Pack FOMO — checklist de disciplina antes del gráfico" width="800" height="500" loading="lazy" />
+          <picture><source type="image/webp" srcset="assets/card-fomo-480.webp 480w, assets/card-fomo-800.webp 800w" sizes="(min-width: 880px) 820px, 100vw" /><img src="assets/card-fomo.jpg" alt="Pack FOMO — checklist de disciplina antes del gráfico" width="800" height="500" loading="lazy" /></picture>
         </div>
         <div class="product-body">
           <div class="product-top">
             <div>
               <p class="product-label">Starter · disciplina <span class="badge-soft">Más elegido</span></p>
-              <h3>Pack FOMO</h3>
+              <h3>Pack FOMO <span class="h3-sub">— checklist crypto y plantilla de diario de trading</span></h3>
             </div>
-            <div class="price" aria-label="Precio 5 euros">
+            <div class="price" role="group" aria-label="Precio 5 euros">
               <strong>€5</strong>
               <span>pago único</span>
             </div>
           </div>
           <p class="product-desc">
-            Para cuando el hype empuja a comprar sin plan. Tres piezas simples que escribes
+            Para cuando el FOMO (miedo a quedarte fuera) empuja a comprar sin plan. Tres piezas simples que escribes
             <em>antes</em> de mirar el gráfico — no señales, no tipster.
           </p>
           <ul class="includes">
             <li>
               <span class="ico" aria-hidden="true">✓</span>
               <div>
-                <strong>Checklist de entradas</strong>
+                <strong>Checklist antes de entrar</strong>
                 <small>Condiciones mínimas antes de abrir una posición.</small>
               </div>
             </li>
             <li>
               <span class="ico" aria-hidden="true">✓</span>
               <div>
-                <strong>Reglas de tamaño</strong>
+                <strong>Reglas de tamaño de posición</strong>
                 <small>Porcentaje máximo de capital por operación — escrito, no “a ojo”.</small>
               </div>
             </li>
             <li>
               <span class="ico" aria-hidden="true">✓</span>
               <div>
-                <strong>Plantilla de journal</strong>
+                <strong>Plantilla de diario de trading (journal)</strong>
                 <small>Registro corto: por qué entraste, qué pasó, qué aprendes.</small>
               </div>
             </li>
@@ -202,22 +285,22 @@
 
       <article class="product" id="brief-fed">
         <div class="product-visual">
-          <img src="assets/card-fed.jpg" alt="Brief Fed — informe FOMC y contexto macro" width="800" height="500" loading="lazy" />
+          <picture><source type="image/webp" srcset="assets/card-fed-480.webp 480w, assets/card-fed-800.webp 800w" sizes="(min-width: 880px) 820px, 100vw" /><img src="assets/card-fed.jpg" alt="Brief Fed — informe FOMC y contexto macro" width="800" height="500" loading="lazy" /></picture>
         </div>
         <div class="product-body">
           <div class="product-top">
             <div>
               <p class="product-label">Informe · FOMC</p>
-              <h3>Brief Fed</h3>
+              <h3>Brief Fed <span class="h3-sub">— la reunión FOMC explicada para crypto</span></h3>
             </div>
-            <div class="price" aria-label="Precio 9 euros">
+            <div class="price" role="group" aria-label="Precio 9 euros">
               <strong>€9</strong>
               <span>pago único</span>
             </div>
           </div>
           <p class="product-desc">
-            Traducción clara de la reunión FOMC (tipos y tono) y qué suele mover Bitcoin, el dólar y la bolsa —
-            en una página, sin predicción mágica.
+            Traducción clara de la reunión de la Fed (FOMC): tipos de interés, tono del comunicado y qué suele mover
+            Bitcoin, el dólar y la bolsa — sin predicción mágica.
           </p>
           <ul class="includes">
             <li>
@@ -254,6 +337,27 @@
           <p class="cta-hint">Pago en Stripe. Tras confirmar, recibes el brief por email.</p>
         </div>
       </article>
+    </section>
+
+    <section class="section wrap" id="guias">
+      <div class="section-head">
+        <h2>Guías gratis de trading y macro</h2>
+        <p>Lo básico, explicado sin hype. Léelas antes de comprar nada.</p>
+      </div>
+      <ul class="guide-cards">
+        <li>
+          <a href="guias/diario-de-trading/">
+            <strong>Cómo hacer un diario de trading</strong>
+            <span>Qué apuntar en cada operación, cómo medir en R y cómo revisarlo cada semana.</span>
+          </a>
+        </li>
+        <li>
+          <a href="guias/que-es-la-fomc-bitcoin/">
+            <strong>Qué es la FOMC y cómo afecta a bitcoin</strong>
+            <span>Quién decide los tipos en EE. UU., a qué hora se publican en España y por qué se mueve crypto.</span>
+          </a>
+        </li>
+      </ul>
     </section>
 
     <section class="section wrap" id="como-funciona">
@@ -341,6 +445,32 @@
       </details>
 
       <details>
+        <summary>¿Qué incluye exactamente el Pack FOMO?</summary>
+        <div class="answer">
+          Tres piezas: un checklist de condiciones mínimas antes de abrir una posición, unas reglas de tamaño
+          de posición (porcentaje máximo de capital por operación) y una plantilla de diario de trading para
+          registrar por qué entraste, qué pasó y qué aprendes. Formato digital (PDF/MD), uso personal.
+        </div>
+      </details>
+
+      <details>
+        <summary>¿Qué es la FOMC y qué trae el Brief Fed?</summary>
+        <div class="answer">
+          La FOMC es el comité de la Reserva Federal de EE. UU. que decide los tipos de interés; se reúne ocho
+          veces al año. El Brief Fed resume la decisión y el tono en lenguaje llano, da niveles de referencia
+          en BTC, ETH, SOL y XRP y una checklist de qué vigilar hasta la próxima reunión.
+          Más contexto en la guía <a href="guias/que-es-la-fomc-bitcoin/">Qué es la FOMC y cómo afecta a bitcoin</a>.
+        </div>
+      </details>
+
+      <details>
+        <summary>¿Es una suscripción?</summary>
+        <div class="answer">
+          No. Pagas una sola vez en Stripe Checkout. No hay renovación automática.
+        </div>
+      </details>
+
+      <details>
         <summary>¿Cómo contacto?</summary>
         <div class="answer">
           Email: <a href="mailto:titotapias@gmail.com">titotapias@gmail.com</a>.
@@ -364,6 +494,11 @@
       </div>
       <p>
         <a href="mailto:titotapias@gmail.com">titotapias@gmail.com</a>
+      </p>
+      <p class="footer-links">
+        <a href="guias/">Guías</a> ·
+        <a href="guias/diario-de-trading/">Diario de trading</a> ·
+        <a href="guias/que-es-la-fomc-bitcoin/">Qué es la FOMC</a>
       </p>
       <p class="footer-copy">© <span id="y"></span> LionT. Todos los derechos reservados.</p>
     </div>

@@ -7,7 +7,7 @@
   --border-strong: rgba(212, 175, 55, 0.38);
   --text: #f5f1e8;
   --text-muted: #b0a99f;
-  --text-dim: #736e66;
+  --text-dim: #8f897f; /* antes #736e66: contraste 3,6:1 → ~5,2:1 (WCAG AA) */
   --gold: #d4af37;
   --gold-soft: #e8c96a;
   --gold-dim: rgba(212, 175, 55, 0.14);
@@ -728,3 +728,123 @@ details .answer a { word-break: break-word; }
   }
   body { padding-bottom: 5.5rem; }
 }
+
+
+/* --- SEO pass (seo/rocket-2026-10-24): picture/WebP, subtítulos H3, guías --- */
+picture { display: block; }
+.hero-media picture { width: 100%; height: 100%; }
+
+.product h3 .h3-sub {
+  display: block;
+  font-size: 0.86rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+.guide-cards {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+@media (min-width: 720px) { .guide-cards { grid-template-columns: 1fr 1fr; } }
+.guide-cards a {
+  display: block;
+  height: 100%;
+  padding: 1.1rem 1.15rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  transition: border-color 0.2s ease;
+}
+.guide-cards a:hover { border-color: var(--border-strong); text-decoration: none; }
+.guide-cards strong { display: block; margin-bottom: 0.3rem; color: var(--gold-soft); }
+.guide-cards span { color: var(--text-muted); font-size: 0.92rem; }
+
+.footer-links { font-size: 0.85rem; }
+
+/* Páginas de guía */
+.breadcrumbs {
+  position: relative;
+  z-index: 1;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  padding-top: 1.25rem;
+}
+.breadcrumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.breadcrumbs li + li::before { content: "›"; margin-right: 0.35rem; color: var(--text-dim); }
+.breadcrumbs a { color: var(--text-muted); }
+
+.guide {
+  position: relative;
+  z-index: 1;
+  padding: 1.25rem 0 2.5rem;
+}
+.guide-head { margin-bottom: 1.75rem; }
+.guide-head h1 {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 6vw, 2.9rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0.9rem 0 0.75rem;
+}
+.guide-head h1 em { font-style: italic; color: var(--gold-soft); }
+.guide-meta { font-size: 0.82rem; color: var(--text-dim); }
+.guide-lead { color: var(--text-muted); font-size: 1.05rem; margin-bottom: 0.6rem; }
+
+.guide h2 {
+  font-family: var(--serif);
+  font-size: clamp(1.45rem, 4vw, 1.85rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin: 2.25rem 0 0.7rem;
+}
+.guide h3 { font-size: 1.08rem; margin: 1.4rem 0 0.45rem; }
+.guide p, .guide li { color: var(--text-muted); }
+.guide p { margin-bottom: 0.9rem; }
+.guide strong { color: var(--text); }
+.guide ul, .guide ol { margin: 0 0 1rem 1.25rem; }
+.guide li { margin-bottom: 0.4rem; }
+.guide .toc {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.15rem 0.6rem;
+  margin: 1.25rem 0;
+}
+.guide .toc p { font-weight: 600; color: var(--text); margin-bottom: 0.4rem; }
+.guide .callout {
+  border-left: 3px solid var(--gold);
+  background: var(--gold-dim);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 0.9rem 1.1rem;
+  margin: 1.25rem 0;
+}
+.guide .callout p:last-child { margin-bottom: 0; }
+.table-wrap { overflow-x: auto; margin: 0.5rem 0 1.25rem; }
+.guide table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  min-width: 30rem;
+}
+.guide th, .guide td {
+  text-align: left;
+  padding: 0.6rem 0.7rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.guide th { color: var(--gold-soft); font-weight: 600; background: var(--bg-elevated); }
+.guide td { color: var(--text-muted); }
+.guide-cta {
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  padding: 1.35rem 1.25rem;
+  margin: 2rem 0 1.5rem;
+}
+.guide-cta h2 { margin-top: 0; }
+.guide-cta .cta { margin-top: 0.4rem; }

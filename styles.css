@@ -1,4 +1,23 @@
 /* LionT Shop — premium brand, mobile-first, warm dark */
+/* v2 (P1-3): fallbacks métricamente ajustados para evitar CLS al cargar las webfonts
+   (size-adjust/ascent-override calculados con fontTools sobre DM Sans e Instrument Serif vs Arial/Liberation) */
+@font-face {
+  font-family: "DM Sans Fallback";
+  src: local("Arial"), local("ArialMT"), local("Liberation Sans"), local("LiberationSans"), local("Helvetica");
+  size-adjust: 103.4%;
+  ascent-override: 95.93%;
+  descent-override: 29.98%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Instrument Serif Fallback";
+  src: local("Times New Roman"), local("TimesNewRomanPSMT"), local("Liberation Serif"), local("LiberationSerif"), local("Times");
+  size-adjust: 83.94%;
+  ascent-override: 117.95%;
+  descent-override: 36.93%;
+  line-gap-override: 0%;
+}
+
 :root {
   --bg: #08080b;
   --bg-elevated: #111117;
@@ -16,8 +35,8 @@
   --radius: 18px;
   --radius-sm: 12px;
   --shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
-  --font: "DM Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
-  --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --font: "DM Sans", "DM Sans Fallback", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --serif: "Instrument Serif", "Instrument Serif Fallback", Georgia, "Times New Roman", serif;
   --max: 880px;
   --header-h: 4rem;
 }
@@ -726,7 +745,7 @@ details .answer a { word-break: break-word; }
     font-size: 0.9rem;
     box-shadow: none;
   }
-  body { padding-bottom: 5.5rem; }
+  body:has(.mobile-buybar) { padding-bottom: 5.5rem; }
 }
 
 
@@ -848,3 +867,25 @@ picture { display: block; }
 }
 .guide-cta h2 { margin-top: 0; }
 .guide-cta .cta { margin-top: 0.4rem; }
+
+/* --- v2 (QA Friday): a11y de enlaces, anclas, tabla, tarjetas --- */
+/* P1-4: enlaces dentro de texto corrido distinguibles sin depender del color (WCAG 1.4.1) */
+.guide p a, .guide li a, .guide td a, .faq .answer a, .faq p a, .disclaimer a, .section-head p a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.guide .toc li a { text-decoration: none; }
+.guide .toc li a:hover { text-decoration: underline; }
+/* P2-4: anclas bajo la cabecera fija */
+[id] { scroll-margin-top: 5.5rem; }
+/* P2-1: tarjetas de guías sin sangría de lista */
+.guide .guide-cards { margin-left: 0; padding: 0; list-style: none; }
+.guide .guide-cards li { margin-bottom: 0; }
+.guide-more { margin-top: 1.5rem; }
+/* P2-3: pista de desplazamiento en tablas anchas (solo móvil) */
+.table-hint { display: none; font-size: 0.8rem; color: var(--text-dim); margin: 0 0 0.35rem; }
+@media (max-width: 560px) { .table-hint { display: block; } }
+.table-wrap:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+/* v2: excepciones — tarjetas y botones no se subrayan */
+.guide .guide-cards a, .guide a.cta, .guide-cta a.cta { text-decoration: none; }

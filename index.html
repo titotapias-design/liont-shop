@@ -29,12 +29,12 @@
   <meta name="twitter:image:alt" content="LionT — plantilla de trading y checklist crypto" />
   <link rel="icon" href="assets/liont-logo.svg" type="image/svg+xml" />
   <meta name="theme-color" content="#0a0a0c" />
+  <link rel="preload" as="image" href="assets/hero-768.webp" imagesrcset="assets/hero-480.webp 480w, assets/hero-768.webp 768w, assets/hero-1200.webp 1200w" imagesizes="100vw" type="image/webp" fetchpriority="high" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" /></noscript>
-  <link rel="preload" as="image" href="assets/hero-1200.webp" imagesrcset="assets/hero-768.webp 768w, assets/hero-1200.webp 1200w" imagesizes="100vw" type="image/webp" />
   <link rel="stylesheet" href="styles.css" />
 <script type="application/ld+json">
 {
@@ -192,7 +192,7 @@
   <main id="contenido">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-media" aria-hidden="true">
-        <picture><source type="image/webp" srcset="assets/hero-768.webp 768w, assets/hero-1200.webp 1200w" sizes="100vw" /><img src="assets/hero.jpg" alt="" width="1200" height="675" fetchpriority="high" /></picture>
+        <picture><source type="image/webp" srcset="assets/hero-480.webp 480w, assets/hero-768.webp 768w, assets/hero-1200.webp 1200w" sizes="100vw" /><img src="assets/hero.jpg" alt="" width="1200" height="675" fetchpriority="high" /></picture>
         <div class="hero-shade"></div>
       </div>
       <div class="wrap hero-copy">
@@ -224,7 +224,7 @@
 
     <section class="products wrap" id="productos" aria-label="Productos">
       <div class="section-head">
-        <h2>Elige tu pack: checklist y diario de trading, o informe FOMC</h2>
+        <h2>Elige tu pack</h2>
         <p>Dos herramientas concretas. Precio fijo. Entrega digital.</p>
       </div>
 
@@ -235,11 +235,11 @@
         <div class="product-body">
           <div class="product-top">
             <div>
-              <p class="product-label">Starter · disciplina <span class="badge-soft">Más elegido</span></p>
-              <h3>Pack FOMO <span class="h3-sub">— checklist crypto y plantilla de diario de trading</span></h3>
+              <p class="product-label">Starter · disciplina <span class="badge-soft">Empieza aquí</span></p>
+              <h3>Pack FOMO <span class="h3-sub">— checklist y diario de trading</span></h3>
             </div>
             <div class="price" role="group" aria-label="Precio 5 euros">
-              <strong>€5</strong>
+              <strong>5&nbsp;€</strong>
               <span>pago único</span>
             </div>
           </div>
@@ -278,7 +278,7 @@
             href="https://buy.stripe.com/14A7sL5x69T32QE1RHbII01"
             rel="noopener noreferrer"
             target="_blank"
-          >Comprar Pack FOMO · €5</a>
+          >Comprar Pack FOMO · 5&nbsp;€</a>
           <p class="cta-hint">Stripe Checkout seguro. Tras el pago, entrega por email.</p>
         </div>
       </article>
@@ -291,10 +291,10 @@
           <div class="product-top">
             <div>
               <p class="product-label">Informe · FOMC</p>
-              <h3>Brief Fed <span class="h3-sub">— la reunión FOMC explicada para crypto</span></h3>
+              <h3>Brief Fed <span class="h3-sub">— la FOMC para crypto</span></h3>
             </div>
             <div class="price" role="group" aria-label="Precio 9 euros">
-              <strong>€9</strong>
+              <strong>9&nbsp;€</strong>
               <span>pago único</span>
             </div>
           </div>
@@ -333,7 +333,7 @@
             href="https://buy.stripe.com/28EfZhbVu5CN9f267XbII02"
             rel="noopener noreferrer"
             target="_blank"
-          >Comprar Brief Fed · €9</a>
+          >Comprar Brief Fed · 9&nbsp;€</a>
           <p class="cta-hint">Pago en Stripe. Tras confirmar, recibes el brief por email.</p>
         </div>
       </article>
@@ -481,8 +481,7 @@
 
     <p class="disclaimer wrap">
       Aviso: el contenido de LionT es educativo e informativo. No constituye asesoramiento
-      financiero, fiscal ni de inversión. Operar con criptoactivos implica riesgo de pérdida
-      del capital. Pago procesado por Stripe; LionT / Tito Tapias es el vendedor del producto digital.
+      financiero, fiscal ni de inversión. Los criptoactivos son muy volátiles y de alto riesgo: puedes perder todo lo invertido. Pago procesado por Stripe; LionT / Tito Tapias es el vendedor del producto digital.
     </p>
   </main>
 
@@ -506,8 +505,8 @@
   <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 
   <div class="mobile-buybar" role="region" aria-label="Comprar rápido">
-    <a class="cta cta-primary" href="https://buy.stripe.com/14A7sL5x69T32QE1RHbII01" rel="noopener noreferrer" target="_blank">FOMO · €5</a>
-    <a class="cta cta-secondary" href="https://buy.stripe.com/28EfZhbVu5CN9f267XbII02" rel="noopener noreferrer" target="_blank">Fed · €9</a>
+    <a class="cta cta-primary" href="https://buy.stripe.com/14A7sL5x69T32QE1RHbII01" rel="noopener noreferrer" target="_blank">FOMO · 5&nbsp;€</a>
+    <a class="cta cta-secondary" href="https://buy.stripe.com/28EfZhbVu5CN9f267XbII02" rel="noopener noreferrer" target="_blank">Fed · 9&nbsp;€</a>
   </div>
 </body>
 </html>
